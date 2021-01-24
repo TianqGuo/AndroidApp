@@ -1,4 +1,4 @@
-package com.laioffer.myapplication;
+package com.laioffer.tinnews;
 
 import org.junit.Test;
 

@@ -1,11 +1,12 @@
-package com.laioffer.myapplication;
+package com.laioffer.tinnews;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 // these override mean to add more comments on each step in lifecycle
-public class MainActivity extends AppCompatActivity {
+public class MainActivityTemp extends AppCompatActivity {
 
     private final static String TAG = "lifecycle";
 
