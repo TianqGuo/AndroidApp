@@ -10,6 +10,8 @@ import okhttp3.Request;
 import okhttp3.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+import com.ashokvarma.gander.GanderInterceptor;
 import com.laioffer.tinnews.network.keyGetter;
 
 
@@ -22,6 +24,7 @@ public class RetrofitClient {
     public static Retrofit newInstance(Context context) {
         OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 .addInterceptor(new HeaderInterceptor())
+                .addInterceptor(new GanderInterceptor(context).showNotification(true))
                 .build();
         return new Retrofit.Builder()
                 .baseUrl(BASE_URL)
