@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 
 import com.laioffer.tinnews.R;
 import com.laioffer.tinnews.databinding.FragmentHomeBinding;
+import com.laioffer.tinnews.databinding.FragmentSaveBinding;
 import com.laioffer.tinnews.model.Article;
 import com.laioffer.tinnews.repository.NewsRepository;
 import com.laioffer.tinnews.repository.NewsViewModelFactory;
