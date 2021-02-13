@@ -30,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
         navController = navHostFragment.getNavController();
         // connect bottom navigation view with controller
         NavigationUI.setupWithNavController(navView, navController);
-        NavigationUI.setupActionBarWithNavController(this, navController);
+//        NavigationUI.setupActionBarWithNavController(this, navController);
+        NewsApi api = RetrofitClient.newInstance(this).create(NewsApi.class);
+
 
 //        NewsApi api = RetrofitClient.newInstance(this).create(NewsApi.class);
 //        api.getTopHeadlines("US").enqueue(new Callback<NewsResponse>() {
